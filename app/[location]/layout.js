@@ -23,17 +23,19 @@ export default function RootLayout({
     return (
         <div className="wrapper">
             {/* image background and overlay */}
-            <div className="overlay"></div>
+            <div className="overlay">
+                
+            </div>
             <Image
-                src="/background.png" className="bg-img" alt="bg-image"
+                src="/background.png" className="bg-img " alt="bg-image"
                 width={700}
                 height={1200}
             />
 
-            <main class="!z-50 w-full">
-                <div class="container">
+            <main className="!z-50 w-full">
+                <div className="container">
                     <div
-                        class="grid grid-cols-12 gap-y-8 py-16 lg:gap-8 2xl:gap-20 2xl:py-20"
+                        className="grid grid-cols-12 gap-y-8 py-16 lg:gap-8 2xl:gap-20 2xl:py-20"
                     >
                         {children}
                         {weather}
